@@ -9,10 +9,9 @@ html, body, #root {
   background-repeat: no-repeat;
   background-position: center;
   min-height: 100vh;
-  height: 100%;
   width: 100%;
-  /* color: white; */
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 body {
