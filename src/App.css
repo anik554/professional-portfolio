@@ -1,0 +1,20 @@
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.app-background {
+  background-image: url('./assets/images/page-bg-1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  /* color: white; */
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
