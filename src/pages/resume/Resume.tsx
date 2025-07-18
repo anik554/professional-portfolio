@@ -1,8 +1,13 @@
 import { Box, Card, CardContent, Grid, Paper, Typography } from "@mui/material";
-import { educationData, experienceData } from "../../utils/MainUtils";
+import {
+  educationData,
+  experienceData,
+  skillsData,
+} from "../../utils/MainUtils";
 import SchoolIcon from "@mui/icons-material/School";
 import HomeRepairServiceIcon from "@mui/icons-material/HomeRepairService";
 import Skills from "../../components/skill/Skills";
+import EngineeringIcon from '@mui/icons-material/Engineering';
 const Resume = () => {
   return (
     <Box
@@ -82,7 +87,29 @@ const Resume = () => {
           </Grid>
         </Box>
         <Box mt={4}>
-          <Skills />
+          <Box display={"flex"} alignItems={"center"} gap={1} mb={2}>
+            <EngineeringIcon color="warning" />
+            <Typography
+              variant="h5"
+              sx={{
+                display: "inline-block",
+                borderBottom: "2px solid rgba(0, 0, 0, 0.2)",
+                paddingBottom: "2px",
+              }}
+            >
+              Working Skills
+            </Typography>
+          </Box>
+          <Grid container spacing={2}>
+            <Grid size={6}>
+              {skillsData.map((skill) => (
+                <Skills key={skill.id} skill={skill.skill} mark={skill.mark} barColor={skill.color!}/>
+              ))}
+            </Grid>
+            <Grid size={6}>
+              <Typography>dsjds</Typography>
+            </Grid>
+          </Grid>
         </Box>
       </Box>
     </Box>

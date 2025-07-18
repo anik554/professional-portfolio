@@ -100,15 +100,15 @@ export const experienceData = [
 ];
 
 export const skillsData = [
-  { id: 1, skill: "HTML5", mark: 95 },
-  { id: 2, skill: "CSS3", mark: 92 },
-  { id: 3, skill: "JavaScript (ES6+)", mark: 90 },
-  { id: 4, skill: "TypeScript", mark: 85 },
-  { id: 5, skill: "React.js", mark: 93 },
-  { id: 6, skill: "Next.js", mark: 88 },
-  { id: 7, skill: "Redux / RTK Query", mark: 85 },
-  { id: 8, skill: "Tailwind CSS", mark: 90 },
-  { id: 9, skill: "Material UI", mark: 87 },
-  { id: 10, skill: "Responsive Design", mark: 95 },
-  { id: 11, skill: "REST API Integration", mark: 90 },
+  { id: 1, skill: "HTML5", mark: 95, color: "primary" },
+  { id: 2, skill: "CSS3", mark: 92, color: "success" },
+  { id: 3, skill: "JavaScript (ES6+)", mark: 90, color: "danger" },
+  { id: 4, skill: "TypeScript", mark: 85, color: "warning" },
+  { id: 5, skill: "React.js", mark: 93, color: "neutral" },
+  { id: 6, skill: "Next.js", mark: 88, color: "info" },
+  { id: 7, skill: "Redux / RTK Query", mark: 85, color: "primary" }, // fix: avoid 'inherit'
+  { id: 8, skill: "Tailwind CSS", mark: 90, color: "warning" },
+  { id: 9, skill: "Material UI", mark: 87, color: "danger" },
+  { id: 10, skill: "Responsive Design", mark: 95, color: "success" }, // fix: avoid 'error'
+  { id: 11, skill: "REST API Integration", mark: 90, color: "success" },
 ];
