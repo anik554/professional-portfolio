@@ -5,6 +5,7 @@ import {
   CardContent,
   Grid,
   Paper,
+  TextareaAutosize,
   TextField,
   Typography,
 } from "@mui/material";
@@ -82,7 +83,10 @@ const Contact = () => {
             <Grid size={8}>
               <Card>
                 <CardContent>
-                  <form action="">
+                  <form
+                    action="https://formsubmit.co/anikimtiaz1993@gmail.com"
+                    method="POST"
+                  >
                     <Box
                       sx={{
                         maxWidth: "70%",
@@ -99,20 +103,36 @@ const Contact = () => {
                         I'm always open to discussing produuct design work or
                         partnerships
                       </Typography>
-                      <TextField label="Name" required size="small" fullWidth />
+                      <input
+                        type="hidden"
+                        name="_next"
+                        value="http://localhost:5173/contact"
+                      />
+                      <TextField
+                        label="Name"
+                        name="name"
+                        type="text"
+                        required
+                        size="small"
+                        fullWidth
+                      />
                       <TextField
                         label="Email"
+                        name="email"
+                        type="email"
                         required
                         size="small"
                         fullWidth
                       />
-                      <TextField
-                        label="Message"
-                        required
-                        size="small"
-                        fullWidth
+                      <TextareaAutosize
+                        maxRows={20}
+                        minRows={5}
+                        name="message"
+                        aria-label="maximum height"
+                        placeholder="Message"
+                        style={{width:"100%"}}
                       />
-                      <Button variant="contained" size="small">
+                      <Button variant="contained" type="submit" size="small">
                         Submit
                       </Button>
                     </Box>
@@ -128,7 +148,7 @@ const Contact = () => {
               paddingBottom: "66.66%",
               height: 0,
               overflow: "hidden",
-              mt:4
+              mt: 4,
             }}
           >
             <Box

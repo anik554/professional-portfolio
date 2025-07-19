@@ -47,7 +47,7 @@ const About = () => {
               </Box>
               <Box mb={2}>
                 <Typography>
-                  I'm a Frontend Developer from Sydney, Australia, passionate
+                  I'm a Frontend Developer from Dhaka, Bangladesh, passionate
                   about building modern, responsive, and user-friendly web
                   interfaces. I specialize in turning complex requirements into
                   clean, efficient, and visually appealing user experiences

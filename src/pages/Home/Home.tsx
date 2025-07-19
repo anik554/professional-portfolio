@@ -1,11 +1,19 @@
 import { Avatar, Box, Button, Typography } from "@mui/material";
-import ProfileImage from "../../assets/images/pro_image.jpg";
+import ProfileImage from "../../assets/images/anik_imtiaz.jpg";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import DownloadIcon from "@mui/icons-material/Download";
 
 export const Home = () => {
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/Resume_of_Anik_Imtiaz.pdf";
+    link.download = "Resume of Anik Imtiaz.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <Box
       width="100%"
@@ -18,7 +26,7 @@ export const Home = () => {
       <Avatar
         alt="Remy Sharp"
         src={ProfileImage}
-        sx={{ width: 250, height: 250, p: 2 }}
+        sx={{ width: 200, height: 200}}
       />
       <Box my={2}>
         <Typography textAlign={"center"} variant="h5" fontWeight={"bold"}>
@@ -30,27 +38,27 @@ export const Home = () => {
       </Box>
       <Box display={"flex"} gap={1} my={1}>
         <a
-          href="https://facebook.com/yourProfile"
+          href="https://www.facebook.com/share/1EywPf1nu9/?mibextid=wwXIfr"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="Facebook Profile"
         >
           <Avatar sx={{ cursor: "pointer" }}>
             <FacebookIcon />
           </Avatar>
         </a>
         <a
-          href="https://github.com/yourUsername"
+          href="https://github.com/anik554"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="Github Profile"
         >
           <Avatar sx={{ cursor: "pointer" }}>
             <GitHubIcon />
           </Avatar>
         </a>
         <a
-          href="https://github.com/yourUsername"
+          href="https://www.linkedin.com/in/anik-imtiaz-b65816209/"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="linkedin Profile"
         >
           <Avatar sx={{ cursor: "pointer" }}>
             <LinkedInIcon />
@@ -62,6 +70,7 @@ export const Home = () => {
           variant="contained"
           sx={{ textTransform: "none" }}
           startIcon={<DownloadIcon />}
+          onClick={handleDownload}
         >
           Download CV
         </Button>
