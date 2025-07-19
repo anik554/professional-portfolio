@@ -8,6 +8,7 @@ import AcUnitIcon from "@mui/icons-material/AcUnit";
 import DesignServicesIcon from "@mui/icons-material/DesignServices";
 import NoteAltIcon from "@mui/icons-material/NoteAlt";
 import Groups2Icon from "@mui/icons-material/Groups2";
+import type { ColorPaletteProp } from "@mui/joy";
 
 export const navbarButtons = [
   { id: 1, label: "Home", value: "HOME", icons: <HomeIcon /> },
@@ -100,15 +101,39 @@ export const experienceData = [
 ];
 
 export const skillsData = [
-  { id: 1, skill: "HTML5", mark: 95, color: "primary" },
-  { id: 2, skill: "CSS3", mark: 92, color: "success" },
-  { id: 3, skill: "JavaScript (ES6+)", mark: 90, color: "danger" },
-  { id: 4, skill: "TypeScript", mark: 85, color: "warning" },
-  { id: 5, skill: "React.js", mark: 93, color: "neutral" },
-  { id: 6, skill: "Next.js", mark: 88, color: "info" },
-  { id: 7, skill: "Redux / RTK Query", mark: 85, color: "primary" }, // fix: avoid 'inherit'
-  { id: 8, skill: "Tailwind CSS", mark: 90, color: "warning" },
-  { id: 9, skill: "Material UI", mark: 87, color: "danger" },
-  { id: 10, skill: "Responsive Design", mark: 95, color: "success" }, // fix: avoid 'error'
-  { id: 11, skill: "REST API Integration", mark: 90, color: "success" },
+  { id: 1, skill: "React.js", mark: 93, color: "primary" },
+  { id: 2, skill: "Next.js", mark: 88, color: "success" },
+  { id: 3, skill: "Redux / RTK Query", mark: 85, color: "warning" },
+  { id: 4, skill: "Node Js", mark: 85, color: "neutral" },
+]satisfies Array<{ id: number; skill: string; mark: number; color: ColorPaletteProp }>;
+
+
+export const knowledgesFrontend = [
+  { id: 1, label: "HTML5"},
+  { id: 2, label: "CSS3"},
+  { id: 3, label: "JavaScript (ES6+)"},
+  { id: 4, label: "TypeScript"},
+  { id: 5, label: "React.js"},
+  { id: 6, label: "Next.js"},
+  { id: 7, label: "Redux / RTK Query"},
+  { id: 8, label: "Tailwind CSS"},
+  { id: 9, label: "Material UI"},
+  { id: 10, label: "Responsive Design"},
+  { id: 11, label: "REST API Integration"},
 ];
+export const knowledgesBackend = [
+  { id: 1, label: "PostgreSQL"},
+  { id: 2, label: "Prisma"},
+  { id: 3, label: "MongoDB"},
+  { id: 4, label: "Mongoose"},
+  { id: 5, label: "Zod Validation"},
+  { id: 6, label: "Docker"},
+  { id: 7, label: "GhaphQL"},
+  { id: 8, label: "AWS"},
+  { id: 9, label: "CI/CD"},
+  { id: 10, label: "Redis"},
+  { id: 11, label: "Express Js with TypeScript"},
+  { id: 12, label: "REST API Integration"},
+];
+
+

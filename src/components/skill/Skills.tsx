@@ -5,7 +5,7 @@ import { type ColorPaletteProp } from "@mui/joy/styles";
 interface ISkill {
   skill: string;
   mark: number;
-  barColor: ColorPaletteProp
+  barColor: ColorPaletteProp;
 }
 
 const Skills = ({ skill, mark, barColor }: ISkill) => {
