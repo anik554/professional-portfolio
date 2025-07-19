@@ -100,7 +100,7 @@ const Contact = () => {
                         alignItems={"center"}
                         gutterBottom
                       >
-                        I'm always open to discussing produuct design work or
+                        I'm always open to discussing product design work or
                         partnerships
                       </Typography>
                       <input
